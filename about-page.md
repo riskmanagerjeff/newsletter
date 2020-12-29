@@ -1,3 +1,8 @@
+layout: page
+title: "about page"
+permalink: /about/
+
+
 An h1 header
 ============
 
