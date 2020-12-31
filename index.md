@@ -1,4 +1,14 @@
-## Welcome to GitHub Pages
+## Welcome to RiskManagerJeff
+
+The road to wealth by embracing risk
+
+In this newsletter, we focus on letting businesses and financial markets do what they do best.  That is, building wealth.  We merely need to sidestep the risky traps and pitfalls along the way.
+
+The Oxford English Dictionary defines *risk* as  
+
+> (Exposure to) the possibility of loss, injury, or other adverse or unwelcome circumstance; a chance or situation involving such a possibility.[5]
+
+
 
 You can use the [editor on GitHub](https://github.com/riskmanagerjeff/newsletter/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
