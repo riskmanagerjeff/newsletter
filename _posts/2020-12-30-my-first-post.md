@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "my first post"
-permalink: /my-first-post/
+permalink: /posts/my-first-post/
 published: true
 ---
 
