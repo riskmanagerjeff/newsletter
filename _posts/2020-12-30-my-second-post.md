@@ -10,4 +10,4 @@ date: 2020-12-30T18:43:00Z
 
 > this is done with layout=default
 
-![An image in the post](/assets/resize-16091336931791353488firepng44294.png)
+![An image in the post](/newsletter/assets/resize-16091336931791353488firepng44294.png)
