@@ -29,6 +29,7 @@
             console.log('test1')
             let xhr = new XMLHttpRequest(); 
             let url = "https://python-373.herokuapp.com/storetodoor/api"
+            xhr.open("POST", url, true); 
             let email = document.getElementById("login_email").value
             var data = JSON.stringify({ "email": email })
             xhr.send(data)
