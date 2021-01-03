@@ -25,6 +25,14 @@
         <p><a href="{{ "/archive" | absolute_url }}">Archive</a></p>
         
         <script>
+          
+          function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+          }
+
           var login = function() {
             console.log('test1')
             let xhr = new XMLHttpRequest(); 
@@ -33,7 +41,8 @@
             xhr.onreadystatechange = function() {
               if (this.readyState == 4 && this.status == 200) {
                 alert(this.responseText)
-                document.cookie = "cookie=crazycookie";
+                setCookie('cookie','crazycookie',7) // days to expire
+                //document.cookie = "cookie=crazycookie";
                 //document.getElementById("demo").innerHTML = this.responseText
               }
             };
