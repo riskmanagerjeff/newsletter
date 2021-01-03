@@ -25,12 +25,14 @@
         <p><a href="{{ "/archive" | absolute_url }}">Archive</a></p>
         
         <script>
-          function login() {
+          var login = function() {
+            console.log('test1')
             let xhr = new XMLHttpRequest(); 
             let url = "https://python-373.herokuapp.com/storetodoor/api"
             let email = document.getElementById("login_email").value
             var data = JSON.stringify({ "email": email })
             xhr.send(data)
+            console.log('test2')
           }
         </script>
         
