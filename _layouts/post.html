@@ -1,7 +1,7 @@
 <script>
   if (true) {
     alert("im gonna redirect you!");
-    window.location.replace("/");
+    window.location.replace("{{ site.url }}");
   }
 </script>
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
