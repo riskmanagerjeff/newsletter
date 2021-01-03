@@ -24,12 +24,21 @@
         <p><a href="{{ "/about" | absolute_url }}">About</a></p>
         <p><a href="{{ "/archive" | absolute_url }}">Archive</a></p>
         
-        <form action="https://python-373.herokuapp.com/storetodoor/api" method="post">
-            <li class="contact-li">
-                <input type="email" placeholder="Your email" id="email"/>
-                <input type="submit" value="Subscribe" id="submit"/>
-            </li>
-        </form>
+        <script>
+          function login() {
+            let xhr = new XMLHttpRequest(); 
+            let url = "https://python-373.herokuapp.com/storetodoor/api"
+            let email = document.getElementById("login_email").value
+            var data = JSON.stringify({ "email": email })
+            xhr.send(data)
+          }
+        </script>
+        
+        <p>
+          <input type="email" id="login_email" placeholder="Email"> 
+          <button onclick="login()">Login</button> 
+        </p>
+       
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub here!! <small>{{ site.github.repository_nwo }}</small></a></p>
